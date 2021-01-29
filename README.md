@@ -15,22 +15,22 @@ git config
 git status
 ```
 
-Добавить `<file>` в индексированную stage область. Точка (.) в значении аргумента подставляет все файлы
+Добавить `file` в индексированную stage область. Точка (.) в значении аргумента подставляет все файлы
 
 ```bash
-git add <file>
+git add `file`
 ```
 
-Удалить файл `<file>` из staged-области
+Удалить файл `file` из staged-области
 
 ```bash
-git rm --cached <file>
+git rm --cached `file`
 ```
 
-Сбросить `<file>` из stage области
+Сбросить `file` из stage области
 
 ```bash
-git reset HEAD <file>
+git reset HEAD `file`
 ```
 
 Коммит с последующим вводом комментария в файле
@@ -60,13 +60,13 @@ git commit --amend --no-edit
 Отмена изменений в файле находящемся в не отслеживаемой области (untracked files)
 
 ```bash
-git checkout -- <file>
+git checkout -- `file`
 ```
 
-Смена ветки на [branch_name]
+Смена ветки на `branch_name`
 
 ```bash
-git checkout [branch_name]
+git checkout `branch_name`
 ```
 
 Лог коммитов
@@ -81,10 +81,10 @@ git log
 git branch
 ```
 
-Создание копии текущей ветки с именем `<branch>` при этом текущая ветка остаётся активной
+Создание копии текущей ветки с именем `branch` при этом текущая ветка остаётся активной
 
 ```bash
-git branch <branch>
+git branch `branch`
 ```
 
 Подробный список веток с описаниями коммитов
@@ -93,16 +93,16 @@ git branch <branch>
 git branch -v
 ```
 
-Удалить ветку `<branch>`
+Удалить ветку `branch`
 
 ```bash
-git branch -D <branch>
+git branch -D `branch`
 ```
 
-Слияние веток [source_branch] с текущей
+Слияние веток `source_branch` с текущей
 
 ```bash
-git merge [source_name]
+git merge `source_name`
 ```
 
 Отмена слияния веток
@@ -126,13 +126,13 @@ git stash pop
 Клонировать удалённый репозиторий
 
 ```bash
-git clone [URL]
+git clone `URL`
 ```
 
-Добавить копию удалённого репозитория с именем [repo_name], находящийся по ссылке [URL]
+Добавить копию удалённого репозитория с именем `repo_name`, находящийся по ссылке `URL`
 
 ```bash
-git remote add [repo_name] [URL]
+git remote add `repo_name` `URL`
 ```
 
 Информация об удалённых репозиториях
@@ -141,32 +141,32 @@ git remote add [repo_name] [URL]
 git remote -v
 ```
 
-Удалить удалённый репозиторий [repo_name]
+Удалить удалённый репозиторий `repo_name`
 
 ```bash
-git remote remove [repo_name]
+git remote remove `repo_name`
 ```
 
-Получить данные с удалённого репозитория [repo_name]
+Получить данные с удалённого репозитория `repo_name`
 
 ```bash
-git fetch [repo_name]
+git fetch `repo_name`
 ```
 
-Выгрузка данных из локальной ветки [branch_name] на ветку [branch_name] удалённого репозитория [repo_name]
+Выгрузка данных из локальной ветки `branch_name` на ветку `branch_name` удалённого репозитория `repo_name`
 
 ```bash
-git push [repo_name] [branch_name]
+git push `repo_name` `branch_name`
 ```
 
-Выгрузить данные локальной ветки [branch_name] на удалённый репозиторий [repo_name] в ветку под именем [remote_branch_name]
+Выгрузить данные локальной ветки `branch_name` на удалённый репозиторий `repo_name` в ветку под именем `remote_branch_name`
 
 ```bash
-git push [repo_name] [branch_name]:[remote_branch_name]
+git push `repo_name` `branch_name`:`remote_branch_name`
 ```
 
-Получить данные из локальной копии удалённого репозитория [repo_name] ветки [branch_name] в текущую активную ветку
+Получить данные из локальной копии удалённого репозитория `repo_name` ветки `branch_name` в текущую активную ветку
 
 ```bash
-git pull [repo_name] [branch_name]
+git pull `repo_name` `branch_name`
 ```
