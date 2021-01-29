@@ -1,6 +1,8 @@
 # Git Cheat Sheet
 The most important and commonly used Git commands
 
+---
+
 Настройка конфигурации репозитория
 
 ```bash
